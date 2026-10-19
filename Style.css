@@ -16,10 +16,34 @@ body{
     border-radius: 20px;
 }
 
-#seção2{
+
+
+#seção2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
+
+#imagem {
+    width: 350px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+#imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+#texto {
+    flex: 1;
+    max-width: 500px;
+    min-width: 0;
+}
+
 
 #seção3{
     display: flex;
@@ -41,9 +65,22 @@ body{
     width: 300px;
 }
 
-#seção4{
+#seção4 {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+}
+
+#seção4 > div {
+    flex: 1;
+    min-width: 0;
+}
+
+#seção4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 @media screen and (max-width:768px){
@@ -54,16 +91,15 @@ body{
         font-size: 12px;
     }
     #seção1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 15px;
         text-align: center;
-        flex-wrap: wrap;
     }
     #seção2{
         flex-direction: column-reverse;
-        
     }
-
-
 }
 
 @media screen and (max-width:425px){
