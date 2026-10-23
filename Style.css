@@ -132,6 +132,37 @@ body{
     font-size: 30px;
 }
 
+details {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 15px;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+summary:hover {
+    color: #ff4655;
+}
+
+details p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-top: 15px;
+}
+
+.links{
+    color: red;
+}
+
 @media screen and (max-width:1070px){
     #localizacao{
         display: flex;
